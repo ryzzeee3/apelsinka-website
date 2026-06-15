@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>Апельсинка beauty | Салон маникюра</title>
+
+    <!-- Фавикон (иконка вкладки) -->
+    <link rel="icon" type="image/jpeg" href="https://i5.imageban.ru/out/2026/06/15/b70c732f5637a545ad4e8a411589ed7c.jpg">
+    <link rel="shortcut icon" type="image/jpeg" href="https://i5.imageban.ru/out/2026/06/15/b70c732f5637a545ad4e8a411589ed7c.jpg">
+    <link rel="apple-touch-icon" href="https://i5.imageban.ru/out/2026/06/15/b70c732f5637a545ad4e8a411589ed7c.jpg">
+
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (иконки) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Календарь -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+    
+    <!-- Файлы -->
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+
+<!-- Шапка сайта -->
+<header>
+    <div class="container header-flex">
+        <div class="logo">
+            <h1>Апельсинка beauty</h1>
+            <p>маникюр с настроением</p>
+        </div>
+        <div class="burger" id="burgerMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li>
+                <div class="theme-switch-wrapper">
+                    <i class="fas fa-sun theme-icon"></i>
+                    <label class="theme-switch">
+                        <input type="checkbox" id="themeCheckbox">
+                        <span class="slider"></span>
+                    </label>
+                    <i class="fas fa-moon theme-icon"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-tagline">Салон красоты</div>
+                <h2>Апельсинка beauty</h2>
+                <p>Изысканный маникюр в атмосфере уюта и вдохновения. Профессиональный уход, который дарит уверенность и радость каждый день.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Записаться онлайн</a>
+                    <a href="#services" class="btn btn-outline">Наши услуги</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://i6.imageban.ru/out/2026/06/15/a29e7074a27ac167adf32cf9f271700f.jpg" alt="Идеальный маникюр" id="heroImage" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <p class="section-subtitle">Качественный уход и безупречный результат</p>
+            
+            <div class="services-category">
+                <h3 class="category-title">🌸 Маникюр</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Ламинирование, уход за кутикулой, форма</h3>
+                            <span class="price">700 ₽</span>
+                        </div>
+                        <p>Без покрытия — здоровый и ухоженный вид ногтей</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Маникюр комбинированный + покрытие</h3>
+                            <span class="price">1600 ₽</span>
+                        </div>
+                        <p>Несложный дизайн, ремонт до 2х ногтей</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Наращивание</h3>
+                            <span class="price">от 2000 ₽</span>
+                        </div>
+                        <p>Любой дизайн, ремонт до 2х ногтей</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-category">
+                <h3 class="category-title">🌸 Педикюр</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Обработка ногтей, стоп, пальчиков</h3>
+                            <span class="price">2000 ₽</span>
+                        </div>
+                        <p>Однотонное покрытие — полный уход</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Обработка ногтей</h3>
+                            <span class="price">1500 ₽</span>
+                        </div>
+                        <p>Однотонное покрытие (без стоп)</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Обработка пальчиков и стоп</h3>
+                            <span class="price">1200 ₽</span>
+                        </div>
+                        <p>Без покрытия — гигиенический уход</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="design-services">
+                <div class="design-title"><i class="fas fa-palette"></i><span>Дизайн (дополнительно)</span></div>
+                <div class="design-items">
+                    <div class="design-item"><h4>Френч</h4><p>200 ₽</p></div>
+                    <div class="design-item"><h4>Стразы, слайдеры</h4><p>от 100 ₽</p></div>
+                    <div class="design-item"><h4>Витражный дизайн</h4><p>от 100 ₽</p></div>
+                </div>
+                <div class="design-note"><i class="fas fa-star-of-life"></i> Воплотим любую вашу задумку! <i class="fas fa-star-of-life"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <div class="container about-wrapper">
+            <div class="about-text">
+                <h3>Твоя «Апельсинка» — больше чем салон</h3>
+                <p>Мы создаём пространство, где ты можешь расслабиться и доверить руки профессионалам. Используем только сертифицированные материалы, следим за стерильностью и трендами.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> Стерилизация инструментов в автоклаве</li>
+                    <li><i class="fas fa-clock"></i> Работаем строго по записи — без ожидания</li>
+                    <li><i class="fas fa-leaf"></i> Гипоаллергенные покрытия и уход</li>
+                    <li><i class="fas fa-mug-hot"></i> Ароматный чай, кофе и сладости в подарок</li>
+                    <li><i class="fas fa-music"></i> Расслабляющая фоновая музыка</li>
+                    <li><i class="fas fa-tree"></i> Панорамный вид из окна</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://t.me/apelsinkaa67" class="social-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                    <a href="https://vk.com/apelsinkaa67" class="social-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-vk"></i> ВКонтакте
+                    </a>
+                    <a href="https://max.ru/join/LQVHv-JQYuWgKQTHmyd21aDUu5PhToyYBKxggx6h8DU" class="social-btn social-btn-max" target="_blank" rel="noopener noreferrer">
+                        <span class="max-icon">M</span> MAX
+                    </a>
+                </div>
+                <a href="#contact" class="btn" style="margin-top: 20px;">Стать гостьей</a>
+            </div>
+            <div class="about-slider">
+                <div class="about-slider-title">Уют нашего салона</div>
+                <div class="about-slider-container">
+                    <div class="about-slider-track" id="aboutSliderTrack"></div>
+                    <button class="about-slider-btn prev" id="aboutPrevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="about-slider-btn next" id="aboutNextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="about-slider-dots" id="aboutSliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея работ -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <p class="section-subtitle">Нажмите на фото, чтобы увеличить</p>
+            <div class="gallery-carousel">
+                <button class="carousel-btn prev" id="galleryPrevBtn"><i class="fas fa-chevron-left"></i></button>
+                <div class="gallery-wrapper">
+                    <div class="gallery-track" id="galleryTrack"></div>
+                </div>
+                <button class="carousel-btn next" id="galleryNextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="gallery-dots" id="galleryDots"></div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="reviews">
+        <div class="container">
+            <h2 class="section-title">Наши сладкие отзывы</h2>
+            <p class="section-subtitle">Что говорят гости об «Апельсинке»</p>
+            <div class="reviews-slider"></div>
+        </div>
+    </section>
+
+    <!-- Контакты, форма и карта -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="section-subtitle">Запишись на удобное время или задай вопрос</p>
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h3>Ждём тебя в гости</h3>
+                    <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><span>г. Смоленск, ул. Крупская 43А - ТРЦ. Империя 4 этаж кб 410</span></div>
+                    <div class="contact-detail"><i class="fas fa-phone-alt"></i><a href="tel:+79605905448">+7 960 590 54 48</a></div>
+                    <div class="contact-detail"><i class="fab fa-telegram"></i><a href="https://t.me/apelsinkaa67" target="_blank">Telegram - @apelsinkaa67</a></div>
+                    <div class="contact-detail"><i class="fab fa-vk"></i><a href="https://vk.com/apelsinkaa67" target="_blank">ВКонтакте - vk.com/apelsinkaa67</a></div>
+                    <div class="contact-detail contact-detail-max">
+                        <span class="max-icon">M</span>
+                        <a href="https://max.ru/join/LQVHv-JQYuWgKQTHmyd21aDUu5PhToyYBKxggx6h8DU" target="_blank">MAX</a>
+                    </div>
+                    <div class="contact-detail"><i class="far fa-clock"></i><span>Ежедневно 10:00 – 20:00</span></div>
+                </div>
+                <div class="contact-form">
+                    <form id="callbackForm">
+                        <div class="form-group"><input type="text" placeholder="Ваше ФИО" id="fullname" required></div>
+                        <div class="form-group"><input type="tel" placeholder="Телефон" id="phone" required></div>
+                        <div class="form-group">
+                            <textarea rows="3" placeholder="Услуга / Пожелание" id="service" class="auto-resize-textarea"></textarea>
+                        </div>
+                        <div class="form-group"><input type="text" placeholder="Дата и время" id="datetime" required></div>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                        <p style="font-size: 0.7rem; margin-top: 10px; text-align: center;">Нажимая кнопку, вы соглашаетесь с политикой обработки данных</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- БЛОК С КАРТОЙ (заглушка) -->
+            <div class="map-container" id="mapPlaceholder">
+                <h3 style="text-align: center; margin-bottom: 20px; color: var(--accent-deep);">🗺️ Как нас найти</h3>
+                <div class="map-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--accent-orange); margin-bottom: 15px;"></i>
+                        <p>📍 г. Смоленск, ул. Крупская 43А</p>
+                        <p>ТРЦ "Империя", 4 этаж, кабинет 410</p>
+                        <div class="placeholder-note">
+                            <i class="fas fa-info-circle"></i> Здесь будет карта с нашим местоположением
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Подвал -->
+<footer>
+    <div class="container">
+        <div class="footer-social">
+            <a href="https://t.me/apelsinkaa67" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://vk.com/apelsinkaa67" target="_blank" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+            <a href="https://max.ru/join/LQVHv-JQYuWgKQTHmyd21aDUu5PhToyYBKxggx6h8DU" target="_blank" aria-label="MAX" class="footer-max-link">
+                <span class="max-icon">M</span>
+            </a>
+        </div>
+        <p style="margin: 15px 0 8px;">Апельсинка beauty — маникюр с душой и цитрусовым настроением</p>
+        <p>© 2025 Все права защищены</p>
+    </div>
+</footer>
+
+<!-- Модальное окно для просмотра фото -->
+<div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-nav prev-modal" id="prevModalBtn"><i class="fas fa-chevron-left"></i></div>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-nav next-modal" id="nextModalBtn"><i class="fas fa-chevron-right"></i></div>
+    <div class="modal-counter" id="modalCounter"></div>
+</div>
+
+</body>
+</html>
